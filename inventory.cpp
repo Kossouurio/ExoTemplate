@@ -11,7 +11,7 @@ void Inventory::addItem(Item* item)
 
 void Inventory::addItem(const char* name, int weight)
 {
-	addItem(&Item(name, weight));
+	addItem(new Item(name, weight));
 }
 
 void Inventory::deleteItemByName(const char* name)
